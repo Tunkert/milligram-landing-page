@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="Here is a website setup using milligram css">
+	<title>Milligram CSS Landing Page</title>
+
+	<!-- milligram css cdn and google fonts cdn -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+	<!-- begin logo and nav menu -->
+	<header>
+		<div class="row">
+			<div class="column column-10"></div>
+			<div class="column column-30 logo">
+				<div class="row">
+					<div class="column column-10">
+						<img src="./images/unicorn.svg" alt="unicorn web dev" width="80" height="28">
+					</div>
+					<div class="column column-90 flex">
+						<li><a href="#">UNICORN WEB DEV</a></li>
+					</div>
+				</div>
+			</div>
+			<div class="column column-50">
+				<div class="row"><!-- begin row -->				
+					<div class="column column-70"></div>
+					<div class="column column-30">
+						<div class="row"><!-- begin row -->
+							<div class="column column-100">
+								<div class="row">
+									<div class="column">
+										<li><a href="#">Home</a></li>
+									</div>
+									<div class="column">
+										<li><a href="#">About</a></li>
+									</div>
+									<div class="column">
+										<li><a href="#">Contact</a></li>
+									</div>
+									<div class="column">
+										<li><a href="#">Blog</a></li>
+									</div>
+								</div>
+							</div>
+						</div><!-- end row -->
+					</div>
+				</div><!-- end row -->
+			</div><!-- end column-50 -->
+			<div class="column column-10"></div>
+		</div>
+	</header>
+	<!-- end logo and nav menu -->
+
+	<!-- begin hero section -->
+	<div id="hero">
+		<div class="hero-spacer"></div>
+		<div class="row">
+			<div class="column column-10"></div>
+			<div class="column column-80">
+				<div class="row">
+					<div class="column column-33">
+						<h4>HTML</h4>
+						<ul>
+							<li>&lt;!-- semantic tags --&gt;</li>
+							<li>&lt;!-- SEO --&gt;</li>
+							<li>&lt;!-- well designed structure --&gt;</li>
+							<li>&lt;!-- html5 --&gt;</li>
+						</ul>
+						<h4>CSS</h4>
+						<ul>
+							<li>{ Milligram: yes; }</li>
+							<li>{ Bootstrap: yes; }</li>
+							<li>{ Foundation: yes; }</li>
+							<li>{ Materialize: yes; }</li>
+						</ul>
+					</div>
+					<div class="column column-33">
+						<img src="./images/unicorn.svg" alt="unicorn web dev">
+					</div>
+					<div class="column column-33 right-hero">
+						<h4>Javascript</h4>
+						<ul>
+							<li>let React</li>
+							<li>let Angular</li>
+							<li>let Vue</li>
+							<li>let Svelte</li>
+						</ul>
+						<h4>PHP</h4>
+						<ul>
+							<li>echo WordPress;</li>
+							<li>echo Joomla;</li>
+							<li>echo Drupal;</li>
+							<li>echo Laravel;</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="column column-10"></div>
+		</div>
+	</div>
+	<!-- end hero section -->
+
+	<!-- begin info section 1 -->
+	<div id="info-section-1">
+		<div class="row">
+			<div class="column column-10"></div>
+			<div class="column column-30">
+				<h3>Need Something Simple?</h3>
+				<h4>Why Build Something Complicated?</h4>
+				<p class="font-large">If you need something simple 
+				with only your email and phone number, 
+				why build something overly complex?</p>
+				<p>You don't need WordPress. You don't need Typescript. 
+				You don't need Nodejs. 
+				We'll give you only what you need.</p>
+			</div>
+			<div class="column column-50">
+				<img src="./images/static.svg" alt="a static website">
+			</div>
+			<div class="column column-10"></div>
+		</div>
+	</div>
+	<!-- end info section 1 -->
+
+	<!-- begin info section 2 -->
+	<div id="info-section-2">
+		<div class="row">
+			<div class="column column-10"></div>
+			<div class="column column-30">
+				<img src="./images/wordpress.svg" alt="wordpress">		
+			</div>
+			<div class="column column-30">
+				<h2>Maybe You Need Something More Advanced?</h2>
+				<h4>Need a Blog? Advanced Functionality?</h4>
+				<p>Wordpress? Nodejs? React? Angular? 
+				Vue? Svelte? We've got you covered, 
+				whatever you need!</p>
+			</div>
+			<div class="column column-10"></div>
+		</div>
+	</div>
+	<!-- end info section 2 -->
+
+	<!-- begin contact us section -->
+	<div id="contact-us">
+		<div class="row">
+			<div class="column column-33 column-offset-33">
+				<form action="" method="">
+					<h3 class="center">Contact Us</h3>
+					<fieldset>
+						<label for="fullname">Full name: </label>
+						<input type="text" id="fullname" name="fullname">
+						<label for="email">Email: </label>
+						<input type="email" id="email" name="email">
+						<label for="message">Message: </label>
+						<textarea id="message" name="message" 
+							placeholder="leave a message ..."
+						>
+						</textarea>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- end contact us secton -->
+
+	<!-- begin footer section -->
+	<div id="footer">
+		<p class="center">Copyright &copy; 2021 Timothy Unkert. 
+		<br>All rights reserved.</p>
+	</div>
+	<!-- end footer section -->
+
+</body>
+</html>
